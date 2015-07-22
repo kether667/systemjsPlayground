@@ -1,8 +1,9 @@
 import angular from 'angular';
-import 'angular-ui-router';
+import uiRouter from 'angular-ui-router';
 
 import RootCtrl from 'js/app/controllers/rootCtrl';
 import OtherCtrl from 'js/app/controllers/otherCtrl';
+import OtherCtrlHtml from 'js/app/controllers/other.html!';
 
 export default function bootstrap() {
     angular.element(document).ready(function () {
@@ -12,7 +13,7 @@ export default function bootstrap() {
                 $stateProvider
                     .state('state1', {
                         url: '/state1',
-                        template: '<div>list <button ng-click="ctrl.hello()">hello</button><button ui-sref="state2">go to state 2</button></div>',
+                        template: OtherCtrlHtml,
                         controller: OtherCtrl,
                         controllerAs: 'ctrl'
                     })
