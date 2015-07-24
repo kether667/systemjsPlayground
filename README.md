@@ -1,0 +1,1 @@
+make sure you `karma-cli` is installed as global npm package not `karma`

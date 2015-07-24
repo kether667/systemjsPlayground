@@ -3,11 +3,11 @@
     "gulp": "^3.8.11",
     "jasmine": "^2.3.1",
     "jasmine-core": "^2.3.4",
-    "jspm": "^0.15.7",
-    "karma": "^0.12.37",
+    "jspm": "^0.16.0-beta.3",
+    "karma": "^0.13.3",
     "karma-babel-preprocessor": "^5.2.1",
     "karma-jasmine": "^0.3.6",
-    "karma-jspm": "^1.1.5",
+    "karma-jspm": "^2.0.1-beta.1",
     "karma-phantomjs-launcher": "^0.2.0",
     "phantomjs": "^1.9.17"
   },
@@ -16,7 +16,7 @@
   },
   "jspm": {
     "directories": {
-        "baseURL": "src"
+      "baseURL": "src"
     },
     "dependencies": {
       "angular": "github:angular/bower-angular@^1.4.3",

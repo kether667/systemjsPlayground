@@ -6,6 +6,7 @@ module.exports = function (config) {
         ],
         jspm: {
             config: "src/config.js",
+            packages: "src/jspm_packages/",
             loadFiles: [
                 'src/js/**/*.spec.js'
             ],
