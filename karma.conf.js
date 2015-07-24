@@ -14,6 +14,10 @@ module.exports = function (config) {
                 'src/js/**/!(*spec).js'
             ]
         },
+        proxies: {
+            '/src': '/base/src',
+            '/jspm_packages/': '/base/src/jspm_packages/'
+        },
         browsers: ["PhantomJS"],
         reporters: ["progress"],
 

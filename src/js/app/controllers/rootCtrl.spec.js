@@ -1,6 +1,6 @@
 'use strict';
 
-import RootCtrl from 'rootCtrl';
+import RootCtrl from '/src/js/app/controllers/rootCtrl';
 
 describe('RootCtrl', () => {
     it('should welcome correctly', function () {
