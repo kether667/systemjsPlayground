@@ -1,8 +1,10 @@
 module.exports = function (config) {
     config.set({
+        basePath: '.',
+        urlRoot: '/',
         frameworks: ['jspm', "jasmine"],
         files: [
-            'node_modules/karma-babel-preprocessor/node_modules/babel-core/browser-polyfill.js'
+            'node_modules/karma-babel-preprocessor/node_modules/babel-core/browser-polyfill.js',
         ],
         jspm: {
             config: "src/config.js",
@@ -39,8 +41,8 @@ module.exports = function (config) {
         colors: true,
         captureTimeout: 60000,
         port: 9876,
-        singleRun: true,
-        autoWatch: false
+        singleRun: false,
+        autoWatch: true
     });
 
     function normalizationBrowserName(browser) {

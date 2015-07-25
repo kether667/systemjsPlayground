@@ -1,0 +1,12 @@
+<div>
+    <h2>More details of {{ctrl.itemId}}</h2>
+
+    <ul>
+        <li ng-repeat="tweet in ctrl.tweets">
+            {{tweet | json}}
+        </li>
+    </ul>
+
+    <button class="btn btn-link" ui-sref="list">go to list</button>
+    <button class="btn btn-link" ui-sref="detail({id: ctrl.itemId})">less details</button>
+</div>

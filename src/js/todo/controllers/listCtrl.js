@@ -9,4 +9,11 @@ export default class ListCtrl {
         this.tmp = '';
     }
 
+    clear() {
+        this.items = [];
+    }
+
+    remove (index) {
+        this.items.splice(index, 1);
+    }
 }
