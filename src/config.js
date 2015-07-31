@@ -16,6 +16,7 @@ System.config({
 System.config({
   "map": {
     "angular": "github:angular/bower-angular@1.4.3",
+    "angular-bootstrap": "github:angular-ui/bootstrap-bower@0.13.1",
     "angular-mocks": "github:angular/bower-angular-mocks@1.4.3",
     "angular-ui-router": "github:angular-ui/ui-router@0.2.15",
     "babel": "npm:babel-core@5.7.4",

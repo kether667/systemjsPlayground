@@ -2,6 +2,8 @@ export default class ListCtrl {
 
     constructor() {
         this.items = ['nothing'];
+
+        this.date = new Date();
     }
 
     addItem(item) {
@@ -15,5 +17,9 @@ export default class ListCtrl {
 
     remove (index) {
         this.items.splice(index, 1);
+    }
+
+    openDatePicker () {
+        this.opened = true;
     }
 }
