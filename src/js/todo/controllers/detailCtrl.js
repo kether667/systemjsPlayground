@@ -5,7 +5,7 @@ export default class DetailCtrl {
         this.itemId = $stateParams.id;
         this.tweets = [];
 
-        IpService.getIp()
+        this.activate = IpService.getIp()
             .then((data) => {
                 this.tweets = data;
             });

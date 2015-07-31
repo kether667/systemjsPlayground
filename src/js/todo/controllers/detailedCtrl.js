@@ -3,10 +3,13 @@ import DetailCtrl from './detailCtrl'
 export default class DetailedCtrl extends DetailCtrl {
 
     constructor($stateParams, $log, IpService) {
-        $log.info('before base class' );
         super($stateParams, $log, IpService);
-        $log.info('after case class' );
+
+        this.activate.then(() => {
+            this.tweets['xxx'] = '123';
+        });
     }
+
 }
 
 DetailCtrl.$inject = ['$stateParams', '$log', 'IpService'];
