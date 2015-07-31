@@ -12,4 +12,4 @@ export default class DetailCtrl {
     }
 }
 
-DetailCtrl.$inject = ['$stateParams', '$log', 'TwitterService'];
+DetailCtrl.$inject = ['$stateParams', '$log', 'IpService'];

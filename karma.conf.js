@@ -17,6 +17,7 @@ module.exports = function (config) {
             ]
         },
         proxies: {
+            '/js/': '/base/src/js/',
             '/src': '/base/src',
             '/jspm_packages/': '/base/src/jspm_packages/'
         },
