@@ -29,6 +29,7 @@ export default class ListCtrl {
         this.items.push(this.findUnique(arr));
     }
 
+
     findUnique(arr) {
         if (arr.length == 1) {
             return arr[0];
